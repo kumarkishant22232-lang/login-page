@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TEAM SPIRIT // Recruitment Build</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BOOT SCREEN
+===================================================== -->
+
+<div id="bootScreen" class="screen boot-screen">
+
+    <div class="boot-inner">
+
+        <div class="eyebrow">
+            // SYSTEM INITIALIZATION
+        </div>
+
+        <div class="tb-mark">
+            TS<span>.</span>
+        </div>
+
+        <div class="boot-sub">
+            TEAM SPIRIT // RECRUITMENT BUILD
+        </div>
+
+        <div
+            class="boot-log"
+            id="bootLog"
+        ></div>
+
+        <div class="progress-wrap">
+
+            <div class="progress-bar">
+
+                <div id="bootProgress"></div>
+
+            </div>
+
+            <div class="progress-meta">
+
+                <span id="bootPercent">
+                    0%
+                </span>
+
+                <span>
+                    SECURE BOOT
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     LOGIN / REGISTER SCREEN
+===================================================== -->
+
+<div
+    id="entryScreen"
+    class="screen entry-screen hidden"
+>
+
+    <div class="auth-card">
+
+        <div class="eyebrow">
+            // SECURE ACCESS
+        </div>
+
+
+        <div class="auth-logo">
+            TS<span>.</span>
+        </div>
+
+
+        <h1 id="authTitle">
+            WELCOME BACK
+        </h1>
+
+
+        <p
+            id="authSubtitle"
+            class="auth-subtitle"
+        >
+            Login to enter Team Spirit.
+        </p>
+
+
+
+        <!-- =================================================
+             LOGIN FORM
+        ================================================= -->
+
+        <form id="loginForm">
+
+
+            <div class="input-group">
+
+                <label>
+                    USERNAME
+                </label>
+
+                <input
+                    type="text"
+                    id="loginUsername"
+                    placeholder="Enter username"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="auth-btn"
+            >
+
+                LOGIN
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+
+            <div
+                id="loginMessage"
+                class="auth-message"
+            ></div>
+
+
+
+            <p class="switch-text">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    id="showRegister"
+                >
+                    CREATE ACCOUNT
+                </button>
+
+            </p>
+
+
+        </form>
+
+
+
+        <!-- =================================================
+             REGISTER FORM
+        ================================================= -->
+
+        <form
+            id="registerForm"
+            class="hidden"
+        >
+
+
+            <div class="input-group">
+
+                <label>
+                    FULL NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    USERNAME
+                </label>
+
+                <input
+                    type="text"
+                    id="registerUsername"
+                    placeholder="Choose username"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    EMAIL
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter email"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create password"
+                    autocomplete="new-password"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    CONFIRM PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    id="registerConfirm"
+                    placeholder="Confirm password"
+                    autocomplete="new-password"
+                    required
+                >
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="auth-btn"
+            >
+
+                REGISTER
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+
+            <div
+                id="registerMessage"
+                class="auth-message"
+            ></div>
+
+
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    id="showLogin"
+                >
+                    LOGIN
+                </button>
+
+            </p>
+
+
+        </form>
+
+
+
+        <div class="status">
+
+            <i></i>
+
+            SECURE AUTHENTICATION
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     LOADING SCREEN
+===================================================== -->
+
+<div
+    id="loadingScreen"
+    class="screen loading-screen hidden"
+>
+
+    <div class="loading-inner">""
+
+        <div class="eyebrow">
+            // SECURE CONNECTION
+        </div>
+
+
+        <div class="loading-title">
+
+            ENTERING THE
+
+            <br>
+
+            <span>
+                WORLD OF TEAM SPIRIT
+            </span>
+
+        </div>
+
+
+        <div
+            class="loading-log"
+            id="loadingLog"
+        ></div>
+
+
+        <div class="progress-wrap">
+
+            <div class="progress-bar">
+
+                <div id="enterProgress"></div>
+
+            </div>
+
+
+            <div class="progress-meta">
+
+                <span id="enterPercent">
+                    0%
+                </span>
+
+                <span>
+                    CONNECTING
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN DESKTOP
+===================================================== -->
+
+<main
+    id="desktop"
+    class="desktop hidden"
+>
+
+
+    <div class="noise"></div>
+
+
+
+    <!-- =================================================
+         TOP BAR
+    ================================================= -->
+
+    <header class="topbar">
+
+
+        <div class="brand">
+
+            <span class="brand-icon">
+                TS
+            </span>
+
+            <span>
+                TEAM SPIRIT
+            </span>
+
+        </div>
+
+
+
+        <div class="welcome-user">
+
+            USER:
+
+            <strong id="currentUser">
+                GUEST
+            </strong>
+
+        </div>
+
+
+
+        <div class="system-state">
+
+            <i></i>
+
+            SYSTEM ONLINE
+
+        </div>
+
+
+
+        <div
+            class="clock"
+            id="clock"
+        >
+            --:--
+        </div>
+
+
+
+        <button
+            id="logoutBtn"
+            class="logout-btn"
+        >
+            LOGOUT
+        </button>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+         WORKSPACE
+    ================================================= -->
+
+    <div class="workspace">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="side-label">
+                WORKSPACE
+            </div>
+
+
+
+            <button
+                class="nav-btn active"
+                data-section="intro"
+            >
+
+                <span>
+                    01
+                </span>
+
+                INTRO
+
+            </button>
+
+
+
+            <button
+                class="nav-btn"
+                data-section="mission"
+            >
+
+                <span>
+                    02
+                </span>
+
+                MISSION
+
+            </button>
+
+
+
+            <button
+                class="nav-btn"
+                data-section="team"
+            >
+
+                <span>
+                    03
+                </span>
+
+                TEAM
+
+            </button>
+
+
+
+            <button
+                class="nav-btn"
+                data-section="learn"
+            >
+
+                <span>
+                    04
+                </span>
+
+                LEARN
+
+            </button>
+
+
+
+            <button
+                class="nav-btn"
+                data-section="build"
+            >
+
+                <span>
+                    05
+                </span>
+
+                BUILD
+
+            </button>
+
+
+
+            <button
+                class="nav-btn"
+                data-section="protocol"
+            >
+
+                <span>
+                    06
+                </span>
+
+                PROTOCOL
+
+            </button>
+
+
+
+            <button
+                class="nav-btn join-nav"
+                data-section="join"
+            >
+
+                <span>
+                    07
+                </span>
+
+                JOIN
+
+            </button>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================= -->
+
+        <section class="content">
+
+
+            <div class="content-head">
+
+
+                <div>
+
+                    <div
+                        class="eyebrow"
+                        id="sectionCode"
+                    >
+                        // MODULE 01
+                    </div>
+
+
+                    <h2 id="sectionTitle">
+                        TEAM SPIRIT
+                    </h2>
+
+                </div>
+
+
+
+                <div class="module-status">
+
+                    MODULE ONLINE
+
+                    <i></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div
+                id="panel"
+                class="panel"
+            ></div>
+
+
+
+            <div class="next-row">
+
+                <button
+                    id="nextBtn"
+                    class="next-btn"
+                >
+
+                    NEXT MODULE
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================= -->
+
+    <footer class="footer">
+
+        <span>
+            LEARN • BUILD • BREAK • EVOLVE
+        </span>
+
+        <span>
+            ONE TEAM • ONE MISSION
+        </span>
+
+    </footer>
+
+
+</main>
+
+
+
+<script src="script.js" defer></script>
+
+</body>
+
+</html>
